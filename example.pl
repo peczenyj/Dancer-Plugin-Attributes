@@ -25,4 +25,4 @@ sub bef :Hook(before) {
   warning "before";
 }
 
-start;
+dance;

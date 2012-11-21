@@ -1,1 +1,16 @@
 first version of Dancer::Plugin::Attributes
+
+use Dancer;
+use Dancer::Plugin::Attributes;
+
+# get example
+sub hello :Get(/hello) {
+ return 'Hello World!';
+}
+
+# post example
+sub wow :Post(/hello/:name) {
+  return 'Hello ' . param 'name';
+}
+
+dance;
